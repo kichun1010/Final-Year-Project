@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/title"
+            android:textSize="29dp"
+            android:fontFamily="@font/bangers"
+            />
+
+        <com.github.jhonnyx2012.horizontalpicker.HorizontalPicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/wholeScreen"
+        android:layout_centerVertical="true"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/btnList1"
+        android:layout_marginBottom="50dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00"
+            android:layout_weight="1"
+            android:id="@+id/btn1"
+            android:onClick="book1"
+            android:background="@drawable/rounded_corners"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:00"
+            android:layout_weight="1"
+            android:id="@+id/btn2"
+            android:onClick="book2"
+            android:background="@drawable/rounded_corners"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00"
+            android:layout_weight="1"
+            android:id="@+id/btn3"
+            android:onClick="book3"
+            android:background="@drawable/rounded_corners"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/btnList2"
+        android:layout_marginBottom="50dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:00"
+            android:layout_weight="1"
+            android:id="@+id/btn4"
+            android:onClick="book4"
+            android:background="@drawable/rounded_corners"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:00"
+            android:layout_weight="1"
+            android:id="@+id/btn5"
+            android:onClick="book5"
+            android:background="@drawable/rounded_corners"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15:00"
+            android:layout_weight="1"
+            android:id="@+id/btn6"
+            android:onClick="book6"
+            android:background="@drawable/rounded_corners"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/btnList3"
+        android:layout_marginBottom="50dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16:00"
+            android:layout_weight="1"
+            android:id="@+id/btn7"
+            android:onClick="book7"
+            android:background="@drawable/rounded_corners"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17:00"
+            android:layout_weight="1"
+            android:id="@+id/btn8"
+            android:onClick="book8"
+            android:background="@drawable/rounded_corners"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18:00"
+            android:layout_weight="1"
+            android:id="@+id/btn9"
+            android:onClick="book9"
+            android:background="@drawable/rounded_corners"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/btnList4">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="19:00"
+            android:layout_weight="1"
+            android:id="@+id/btn10"
+            android:onClick="book10"
+            android:background="@drawable/rounded_corners"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20:00"
+            android:layout_weight="1"
+            android:id="@+id/btn11"
+            android:onClick="book11"
+            android:background="@drawable/rounded_corners"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21:00"
+            android:layout_weight="1"
+            android:id="@+id/btn12"
+            android:onClick="book12"
+            android:background="@drawable/rounded_corners"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/show"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

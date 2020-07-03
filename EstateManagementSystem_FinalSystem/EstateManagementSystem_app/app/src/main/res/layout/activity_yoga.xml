@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/title"
+            android:textSize="29dp"
+            android:fontFamily="@font/bangers"
+            />
+
+
+        <com.github.jhonnyx2012.horizontalpicker.HorizontalPicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="200dp">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30dp"
+    android:text="Room1"
+    android:layout_gravity="center"
+    android:textColor="#FFFFFF"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp"
+            >
+
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalScrollView2"
+                >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/horizontalScrollViewItemContainer2"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:00"
+                    android:layout_weight="1"
+                    android:id="@+id/btn1"
+                    android:onClick="book1"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11:00"
+                    android:layout_weight="1"
+                    android:id="@+id/btn2"
+                    android:onClick="book2"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00"
+                    android:layout_weight="1"
+                    android:id="@+id/btn3"
+                    android:onClick="book3"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13:00"
+                    android:layout_weight="1"
+                    android:id="@+id/btn4"
+                    android:onClick="book4"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14:00"
+                    android:layout_weight="1"
+                    android:id="@+id/btn5"
+                    android:onClick="book5"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15:00"
+                    android:layout_weight="1"
+                    android:id="@+id/btn6"
+                    android:onClick="book6"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16:00"
+                    android:layout_weight="1"
+                    android:id="@+id/btn7"
+                    android:onClick="book7"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17:00"
+                    android:layout_weight="1"
+                    android:id="@+id/btn8"
+                    android:onClick="book8"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18:00"
+                    android:layout_weight="1"
+                    android:id="@+id/btn9"
+                    android:onClick="book9"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19:00"
+                    android:layout_weight="1"
+                    android:id="@+id/btn10"
+                    android:onClick="book10"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20:00"
+                    android:layout_weight="1"
+                    android:id="@+id/btn11"
+                    android:onClick="book11"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21:00"
+                    android:layout_weight="1"
+                    android:id="@+id/btn12"
+                    android:onClick="book12"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+
+    </HorizontalScrollView>
+        </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Room2"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:00"
+                    android:id="@+id/btn13"
+                    android:layout_weight="1"
+                    android:onClick="book13"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11:00"
+                    android:id="@+id/btn14"
+                    android:layout_weight="1"
+                    android:onClick="book14"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00"
+                    android:id="@+id/btn15"
+                    android:layout_weight="1"
+                    android:onClick="book15"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13:00"
+                    android:id="@+id/btn16"
+                    android:layout_weight="1"
+                    android:onClick="book16"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14:00"
+                    android:id="@+id/btn17"
+                    android:layout_weight="1"
+                    android:onClick="book17"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15:00"
+                    android:id="@+id/btn18"
+                    android:layout_weight="1"
+                    android:onClick="book18"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16:00"
+                    android:id="@+id/btn19"
+                    android:layout_weight="1"
+                    android:onClick="book19"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17:00"
+                    android:id="@+id/btn20"
+                    android:layout_weight="1"
+                    android:onClick="book20"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18:00"
+                    android:id="@+id/btn21"
+                    android:layout_weight="1"
+                    android:onClick="book21"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19:00"
+                    android:id="@+id/btn22"
+                    android:layout_weight="1"
+                    android:onClick="book22"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20:00"
+                    android:id="@+id/btn23"
+                    android:layout_weight="1"
+                    android:onClick="book23"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21:00"
+                    android:id="@+id/btn24"
+                    android:layout_weight="1"
+                    android:onClick="book24"
+                    android:background="@drawable/rounded_corners"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+
+    </HorizontalScrollView>
+        </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

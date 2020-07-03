@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Booking.Choice"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="25dp">
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="150dp"
+            android:height="150dp"
+            android:fontFamily="@font/bangers"
+            android:onClick="book"
+            android:text="Gym Room"
+            android:textSize="30sp"
+            android:background="@drawable/circle"
+            android:layout_margin="5dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="150dp"
+            android:height="150dp"
+            android:fontFamily="@font/bangers"
+            android:onClick="book2"
+            android:text="Yoga Room"
+            android:textSize="30sp"
+            android:background="@drawable/circle"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="25dp">
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="150dp"
+            android:height="150dp"
+            android:fontFamily="@font/bangers"
+            android:onClick="book3"
+            android:text="Badminton Court"
+            android:textSize="30sp"
+            android:background="@drawable/circle"
+            android:layout_margin="5dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="150dp"
+            android:height="150dp"
+            android:fontFamily="@font/bangers"
+            android:onClick="book4"
+            android:text="Tennis Court"
+            android:textSize="30sp"
+            android:background="@drawable/circle"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="25dp">
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="150dp"
+            android:height="150dp"
+            android:fontFamily="@font/bangers"
+            android:onClick="book5"
+            android:text="barbecue site"
+            android:textSize="30sp"
+            android:background="@drawable/circle"
+            android:layout_margin="5dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="150dp"
+            android:height="150dp"
+            android:fontFamily="@font/bangers"
+            android:onClick="book6"
+            android:text="Jacuzzi"
+            android:textSize="30sp"
+            android:background="@drawable/circle"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.estatemanagementsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login.ChangePassword"></activity>
+        <activity android:name=".Login.activity_login">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".Booking.BookingRecord" />
+        <activity android:name=".Booking.Booking" />
+        <activity android:name=".Booking.Gym" />
+        <activity android:name=".Booking.YoGa" />
+        <activity android:name=".Booking.Tennis" />
+        <activity android:name=".Booking.Badminton" />
+        <activity android:name=".Booking.BBQ" />
+        <activity android:name=".Booking.Jacuzzi" />
+        <activity android:name=".Booking.PaymentDetails" />
+        <activity android:name=".Booking.Choice" />
+        <activity android:name=".QandA.createTicketActivity" />
+        <activity android:name=".QandA.historyTicket" />
+        <activity android:name=".QandA.ticketHome" />
+        <activity
+            android:name=".ui.PersonVerificationActivity"
+            android:label="@string/person_verification"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.FaceActivity" />
+        </activity>
+        <activity
+            android:name=".ui.SelectImageActivity"
+            android:label="@string/select_an_image"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".persongroupmanagement.PersonGroupListActivity"
+            android:label="@string/person_group_list"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /> <!-- <meta-data -->
+        <!-- android:name="android.support.PARENT_ACTIVITY" -->
+        <!-- /> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".persongroupmanagement.PersonGroupActivity"
+            android:label="@string/person_group"
+            android:launchMode="singleTop"
+            android:parentActivityName=".persongroupmanagement.PersonGroupListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".persongroupmanagement.PersonGroupListActivity" />
+        </activity>
+        <activity
+            android:name=".persongroupmanagement.PersonActivity"
+            android:label="@string/person"
+            android:launchMode="singleTop"
+            android:parentActivityName=".persongroupmanagement.PersonGroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".persongroupmanagement.PersonGroupActivity" />
+        </activity>
+        <activity
+            android:name=".persongroupmanagement.AddFaceToPersonActivity"
+            android:label="@string/add_face_to_person"
+            android:parentActivityName=".persongroupmanagement.PersonActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".persongroupmanagement.PersonActivity" />
+        </activity>
+        <activity
+            android:name=".log.VerificationLogActivity"
+            android:label="@string/verification_log"
+            android:screenOrientation="portrait" /> <!-- <meta-data -->
+        <!-- android:name="android.support.PARENT_ACTIVITY" -->
+        <!-- /> -->
+        <!-- </activity> -->
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".ui.FaceActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Bus.BusTimeTable" />
+        <activity android:name=".Bus.Bus" />
+        <activity android:name=".Notice.Notice" />
+        <activity android:name=".Notice.Notice2_1" />
+        <activity android:name=".Notice.Notice2" />
+        <activity android:name=".Notice.Notice1_1" />
+        <activity android:name=".Notice.Notice1" />
+        <activity android:name=".Bus.TimeTable" />
+        <activity android:name=".CCTV.CCTVActivity"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
